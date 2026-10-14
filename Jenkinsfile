@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('12-maximum-array-element') {
+                dir('13-count-vowels') {
                     bat 'mvn clean test package'
                 }
             }
