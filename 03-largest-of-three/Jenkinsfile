@@ -9,7 +9,9 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                bat 'mvn clean test package'
+                dir('03-largest-of-three') {
+                    bat 'mvn clean test package'
+                }
             }
         }
     }
