@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('06-fibonacci-series') {
+                dir('01-addition-two-numbers') {
                     bat 'mvn clean test package'
                 }
             }
