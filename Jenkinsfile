@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('13-count-vowels') {
+                dir('14-reverse-string') {
                     bat 'mvn clean test package'
                 }
             }
