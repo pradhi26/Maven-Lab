@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('07-reverse-number') {
+                dir('08-number-palindrome') {
                     bat 'mvn clean test package'
                 }
             }
