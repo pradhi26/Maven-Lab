@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('01-addition-two-numbers') {
+                dir('02-even-odd') {
                     bat 'mvn clean test package'
                 }
             }
