@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('09-simple-interest') {
+                dir('10-student-grade') {
                     bat 'mvn clean test package'
                 }
             }
