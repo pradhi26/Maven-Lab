@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('06-fibonacci-series') {
+                dir('04-factorial') {
                     bat 'mvn clean test package'
                 }
             }
