@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                dir('15-string-palindrome') {
+                dir('06-fibonacci-series') {
                     bat 'mvn clean test package'
                 }
             }
